@@ -1,0 +1,135 @@
+.offer {
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  text-align: center;
+}
+.offer-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.offer-section__title {
+  margin: 0 auto;
+  padding-bottom: 1.88rem;
+  color: var(--dark-grey);
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3.25rem; 
+  letter-spacing: -0.025rem;
+}
+
+.offer-section__description {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3.38rem;
+  color: var(--dark-grey);
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.offer-box {
+  width: 19rem;
+  margin-bottom: 1.25rem;
+  padding: 2rem;
+  border: 1px solid var(--sombre-gris);
+  border-radius: .5rem;
+  color: var(--sombre-gris);
+  transition: .5s;
+  backdrop-filter: blur(10px);
+}
+.offer-box:hover{
+  cursor: pointer;
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+
+.offer-box__header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.25rem;
+}
+
+.offer-box__name {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.offer-box__price {
+  display: flex;
+  justify-content:left;
+  align-items:start;
+  padding-bottom: 1.5rem; 
+  font-size: 3.625rem;
+  font-weight: 700;
+  line-height: 4.375rem; 
+  letter-spacing: -0.0625rem;
+}
+
+.offer-box__price::after{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  content: "$";
+
+
+}
+.offer-box__advantages {
+  margin-top: .5rem;
+}
+
+.advantage {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+  padding-left: 1rem;
+}
+
+.advantage__checkmark {
+  margin-right: .5rem;
+  color: var(--dark-grey);
+}
+
+.advantage__text {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.btn--hero__nav{
+  width: 15rem;
+  height: 3.75rem;
+  background-color: var(--grey);
+  border: none;
+  border-radius: 2rem;
+  color: var(--dark-grey);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  cursor: pointer;
+}
+.button__price{
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+.button__price:active{
+  color: var(--clear-grey); 
+}
+
+.btn--hero__nav:hover{
+  background-color: var(--clear-grey);
+  cursor: pointer;
+}
+.btn--hero__nav:active{
+  background-color: var(--dark-grey);
+  border: var(--dark-grey) 2px solid;
+
+}

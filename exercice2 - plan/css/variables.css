@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap");
+
+:root {
+	--green-button: #25DAC5;
+	--neutral-blue:#482BE7;
+	--clear-blue:#3056D3;
+	--dark-blue:  #1E0E62;
+	--bleu:#03e9f4;
+	--grey:#EBEAED;
+	--white:#FFFFFF;
+	--clear-grey:#CCCCCC;
+	--black-blue:#151439;
+	--pink:#E93A7D;
+	--black:#000000;
+	--dark-grey:#1a1a1a;
+	--sombre-gris:#333333;
+	--gris-neutre:#464646;
+	--rouge:#FF0000 ;
+  }
