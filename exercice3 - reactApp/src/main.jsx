@@ -4,7 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
 import About from './routes/about.jsx';
-import Buy from './routes/buy.jsx';
+import Buy, {loader as storeLoader} from './routes/buy.jsx';
+// import AllTeam, {loaderDevelopment as teamloaderDevelopment, loaderSales as teamloaderSales, loaderWebdesign as teamloaderWebdesign} from './routes/team.jsx';
+import AllTeam, {loader as teamLoader} from './routes/team.jsx';
 
 import './index.css';
 
@@ -15,13 +17,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'buy',
-        element: <Buy />
+        element: <Buy />,
+        loader:storeLoader
       },
       { 
         path: 'about',
         element: <About />
+      },
+      {
+        path: 'team/:teamType',
+        element: <AllTeam />,
+        loader: teamLoader
       }
-    ]
+    ],
+    
   },
 
 ]);

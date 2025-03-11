@@ -56,20 +56,5 @@ export default function Plan({label, price, advantages, onOrder=null}) {
       </div>
     
     );
-
-    return (
-        <div className="offer-box">
-            <div className=" offer-box__header">
-                <h3 className="offer-box__name">{label}</h3>
-                <p className="offer-box__price">{price}</p>
-            </div>
-            <ul>
-                {advantages.map((item, index) => (
-                    <Item key={index} text={item.text} check={item.check} />
-                ))}
-            </ul>
-            {onOrder &&  <button onClick={()=>{onOrder(label)}} className="header__button btn--hero__nav"> Acheter</button>}
-        </div>
-    );
 }
 

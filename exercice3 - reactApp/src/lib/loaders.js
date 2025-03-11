@@ -1,6 +1,7 @@
-
+import { fakeNetwork } from "./utils";
 
 export async function fetchOurTeams(teamName){
+    await fakeNetwork();
     let answer = await fetch('/src/lib/data/teams-data.json');
     let data = await answer.json();
     return data[teamName];
